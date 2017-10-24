@@ -14,6 +14,8 @@ mitra-
 
 ---
 
+alam
+alami
 abad
 abadi
 aman
