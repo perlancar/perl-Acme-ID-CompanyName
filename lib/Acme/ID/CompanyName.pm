@@ -79,7 +79,7 @@ obor
 orisinal
 optimis
 
-perusahaan*
+perusahaan
 pertama
 pratama
 prima
