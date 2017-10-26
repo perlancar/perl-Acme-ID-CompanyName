@@ -277,8 +277,8 @@ sub gen_generic_id_company_names {
 Sample output:
 
  [
-   "Sentosa Jaya Abadi",
-   "Putra Utama Global",
+   "PT Sentosa Jaya Abadi",
+   "PT Putra Utama Globalindo",
  ]
 
 
