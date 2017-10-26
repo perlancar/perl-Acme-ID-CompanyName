@@ -174,6 +174,13 @@ $SPEC{gen_generic_id_company_names} = {
         },
     },
     result_naked => 1,
+    examples => [
+        {
+            argv => [qw/-n 2/],
+            result => [200, "OK", ["PT Sentosa Jaya Abadi", "PT Putra Utama Globalindo"]],
+            test => 0,
+        },
+    ],
 };
 sub gen_generic_id_company_names {
     my %args = @_;
@@ -268,18 +275,5 @@ sub gen_generic_id_company_names {
 
 1;
 # ABSTRACT:
-
-=head1 SYNOPSIS
-
- use Acme::ID::CompanyName qw(gen_generic_id_company_names);
- my $names = gen_generic_id_company_names(num_names => 2);
-
-Sample output:
-
- [
-   "PT Sentosa Jaya Abadi",
-   "PT Putra Utama Globalindo",
- ]
-
 
 =head1 DESCRIPTION
