@@ -17,28 +17,47 @@ alam
 alami
 abad
 abadi
+agung
 aman
 ampuh
 amanah
 amanat
 
-eka
-eterna
-
+bagus
 bangsa
 berjaya
 berdikari
 berdiri
+berlian
 bersama
 bersatu
 bersaudara
+besar
 
+cahaya
+cahya
+cakra
+catur
+cendrawasih
+central
+chandra
+cipta
+citra
+class
+control
+cosmos
+creative
+
+diamond
 dika
 delta
 dunia
 
-eterna
+eka
 elegan
+era
+eterna
+etos
 
 fajar
 forsa
@@ -46,7 +65,25 @@ fortuna
 
 global
 graha
+guna
 
+hutama
+hulu
+harapan
+harmoni
+harta
+hasil
+hasrat
+hasta
+haluan
+halal
+hati
+hurip
+humana
+human
+humania
+
+indah
 inti
 internasional
 indonesia
@@ -59,6 +96,12 @@ karya
 kurnia
 
 lestari
+lumbung
+laksana
+lautan
+lotus
+lucky
+luas
 
 mulia
 mandala
@@ -70,6 +113,8 @@ multi
 mitra
 
 nusantara
+normal
+nirwana
 
 oasis
 optima
@@ -78,12 +123,32 @@ optimus
 obor
 orisinal
 optimis
+oscar
 
+pelangi
 perusahaan
 pertama
 pratama
 prima
 putra
+pusaka
+pusat
+
+quick
+quadra
+quadrant
+quality
+quantum
+quanta
+
+rekayasa
+rajawali
+raja
+radiant
+rintis
+royal
+roda
+ruang
 
 sarana
 sejahtera
@@ -102,6 +167,60 @@ tren
 umum
 utara
 utama
+
+victory
+viktori
+victoria
+varia
+variasi
+versa
+vektor
+vista
+visi
+vision
+venus
+venture
+ventura
+vita
+vito
+vidia
+
+widya
+widia
+wira
+wiratama
+warna
+wahana
+wahyu
+waringin
+wacana
+wadah
+waguna
+wiguna
+
+xsis
+xcel
+xtra
+xtras
+xmas
+xpro
+xpres
+xpress
+xtreme
+
+yellow
+yasa
+yes
+young
+
+zeus
+zeta
+zoom
+zona
+zone
+zaman
+zaitun
+
 );
 
 my %Per_Letter_Words;
@@ -122,6 +241,7 @@ tri
 tetra
 panca
 );
+# ever
 
 our @Suffixes = qw(
 indo
@@ -136,9 +256,34 @@ tama
 # media
 
 ## some more specific prefixes/suffixes
+# valas
+# herbal
+# higienis
+# home
+# cyber
+# net
+# organik
+# online
+# ritel
+# data
+# digital
+# energi
+# energy
+# equinox
+# exa
+# pustaka
+# huruf
+# equity
+# eco-
+# electronic
 # tekno-
 # oto-
 # media-
+
+# christianish
+# yobel
+# hosana
+# yahya
 
 $SPEC{gen_generic_id_company_names} = {
     v => 1.1,
