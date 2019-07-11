@@ -1,20 +1,20 @@
-0.004   2017-12-19 (PERLANCAR)
+0.004   2017-12-19  Released-By: PERLANCAR
 
 	- Add some more words.
 
 	- Fix example.
 
 
-0.003   2017-10-26 (PERLANCAR)
+0.003   2017-10-26  Released-By: PERLANCAR
 
 	- [dist] Fix ordering in dist.ini to properly create POD for CLI.
 
 
-0.002   2017-10-26 (PERLANCAR)
+0.002   2017-10-26  Released-By: PERLANCAR
 
 	- Remove unwanted character in one of the words.
 
 
-0.001   2017-10-26 (PERLANCAR)
+0.001   2017-10-26  Released-By: PERLANCAR
 
         - First release.
