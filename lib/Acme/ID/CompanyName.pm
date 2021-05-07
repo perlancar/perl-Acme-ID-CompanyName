@@ -18,6 +18,8 @@ our %SPEC;
 our @Words = qw(
 abad
 abadi
+adhi
+adi
 agung
 aksa
 aksara
@@ -31,12 +33,18 @@ amanah
 amanat
 amerta
 ampuh
+andal
+andalan
 angkasa
+anugerah
+arta
+artha
 arunika
 asa
 
 bagus
 bangsa
+bangun
 baru
 baskara
 baswara
@@ -46,6 +54,7 @@ bentang
 berdikari
 berdiri
 berjaya
+berkat
 berlian
 bersama
 bersatu
@@ -54,7 +63,10 @@ beruntung
 besar
 bestari
 bijaksana
+bina
 binar
+bintang
+bisnis
 buana
 bukit
 bulan
@@ -72,21 +84,31 @@ chandra
 cipta
 citra
 
+dagang
+dana
+darma
 dasa
 dasar
 data
+delapan
 delta
+dharma
 digital
 dika
 dirgantara
 dunia
+duta
 
+eden
 eka
+elang
 elegan
 elegi
 elektrik
 elektro
 elektronik
+empat
+enam
 energi
 era
 esa
@@ -97,6 +119,9 @@ fajar
 forsa
 fortuna
 
+gading
+galaksi
+garuda
 gelora
 gemerlap
 gemilang
@@ -104,7 +129,9 @@ gemintang
 gempita
 gilang
 global
+gloria
 graha
+griya
 guna
 gunung
 
@@ -117,6 +144,7 @@ hasil
 hasrat
 hasta
 hati
+hoki
 #hosana-christianish
 hulu
 human
@@ -129,22 +157,30 @@ indah
 indonesia
 indotama
 industri
+insan
 inspirasi
 internasional
 inti
+investa
+investama
 
 jasa
 jatmika
 jaya
 jenggala
 jingga
+juara
 jumantara
+juwara
 juwita
 
 kala
+kapital
 karsa
 karya
 kasih
+keluarga
+kencana
 khatulistiwa
 kidung
 kirana
@@ -154,27 +190,45 @@ krida
 kurnia
 
 laksana
+langgeng
 langit
 lautan
+layanan
+legenda
 lembayung
+lentera
 lestari
+liberti
+lima
 lotus
 luas
 lumbung
 
+mahkota
 maju
 makmur
+maksindo
 mandala
+mandiri
+mapan
+marga
 maritim
+mas
 media
+megah
+mekar
+menara
+menuju
 milenia
 milenial
 mitra
 multi
+multimedia
 
 nirmala
 nirwana
 normal
+nuansa
 nusa
 nusantara
 
@@ -189,15 +243,27 @@ orisinal
 otomatis
 
 paripurna
+pasifik
 pelangi
 perkasa
+permata
 pertama
 perusahaan
 pijar
+pilar
+pionir
+polar
+polarindo
 pratama
+prawira
 prima
+prioritas
+properti
+propertindo
+prospek
 pusaka
 pusat
+putera
 putra
 
 quadra
@@ -219,18 +285,29 @@ ruang
 
 santosa
 sarana
+sari
+satu
 sehat
 sejahtera
 sejati
+selaras
+sembilan
 sempurna
 sentosa
 sentra
 sentral
+setia
 simfoni
+sinar
 sintesa
 sintesis
+solusi
+solusindo
+sukses
 sumber
+surya
 
+talenta
 taktis
 teduh
 teknologi
@@ -238,7 +315,9 @@ tenteram
 tentram
 terang
 terus
+tiga
 tren
+tujuh
 tunggal
 
 ufuk
@@ -251,6 +330,8 @@ utara
 varia
 variasi
 vektor
+ventura
+venturindo
 venus
 versa
 vidia
@@ -275,6 +356,7 @@ wira
 wiratama
 wiyata
 
+xavier
 xcel
 xmas
 xpres
@@ -302,23 +384,30 @@ for my $letter ("a".."z") {
 
 our @Prefixes = qw(
 adi
+dana
 dwi
 eka
 indo
+inti
 media
 mega
 mitra
 multi
+nara
 oto
 panca
+prima
+sapta
 swa
 tekno
 tetra
+trans
 tri
 );
 
 our @Suffixes = qw(
 indo
+jaya
 tama
 );
 
