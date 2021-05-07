@@ -1,6 +1,8 @@
 package Acme::ID::CompanyName;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -8,7 +10,7 @@ use strict;
 use warnings;
 
 use Exporter 'import';
-our @EXPORT_OK = qw(gen_generic_id_company_names);
+our @EXPORT_OK = qw(gen_generic_ind_company_names);
 
 our %SPEC;
 
@@ -285,7 +287,7 @@ tama
 # hosana
 # yahya
 
-$SPEC{gen_generic_id_company_names} = {
+$SPEC{gen_generic_ind_company_names} = {
     v => 1.1,
     summary => 'Generate nice-sounding, generic Indonesian company names',
     args => {
@@ -327,7 +329,7 @@ $SPEC{gen_generic_id_company_names} = {
         },
     ],
 };
-sub gen_generic_id_company_names {
+sub gen_generic_ind_company_names {
     my %args = @_;
 
     my $type = $args{type} // 'PT';
