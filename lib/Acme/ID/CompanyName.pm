@@ -336,6 +336,7 @@ $SPEC{gen_generic_ind_company_names} = {
             schema => ['int*', min=>0],
             default => 1,
             cmdline_aliases => {n=>{}},
+            pos => 0,
         },
         num_words => {
             schema => ['int*', min=>1],
