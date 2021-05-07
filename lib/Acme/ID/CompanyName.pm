@@ -359,8 +359,13 @@ $SPEC{gen_generic_ind_company_names} = {
     result_naked => 1,
     examples => [
         {
-            argv => [qw/-n 2/],
-            result => [200, "OK", ["PT Sentosa Jaya Abadi", "PT Putra Utama Globalindo"]],
+            summary => 'Generate five random PT names',
+            argv => [qw/5/],
+            test => 0,
+        },
+        {
+            summary => 'Generate three PT names with desired initials "ACME"',
+            argv => [qw/-n3 --desired-initials ACME/],
             test => 0,
         },
     ],
