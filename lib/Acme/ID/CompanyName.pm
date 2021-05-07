@@ -482,17 +482,25 @@ sub gen_generic_ind_company_names {
         my $word_tries = 0;
         my $has_added_prefix;
         my $has_added_suffix;
+      WORD:
         for my $j (1..$num_words) {
             die "Can't produce a company name that satisfies requirements"
                 if ++$word_tries > 1000;
 
+            my $will_add_prefix =
+                !$add_prefixes ? 0 :
+                $has_added_prefix ? 0 :
+                rand()*$num_words*6 > 1 ? 0 : 1;
+
             my $word;
-            if (length($desired_initials) >= $j and
-                    my $letter = substr($desired_initials, $j-1, 1)) {
-                die "There are no words that start with '$letter'"
-                    unless $Per_Letter_Words{$letter};
-                $word = $Per_Letter_Words{$letter}->[
-                    @{ $Per_Letter_Words{$letter} } * rand()
+            my $desired_initial = length($desired_initials) >= $j ?
+                substr($desired_initials, $j-1, 1) : undef;
+
+            if (!$will_add_prefix && $desired_initial) {
+                die "There are no words that start with '$desired_initial'"
+                    unless $Per_Letter_Words{$desired_initial};
+                $word = $Per_Letter_Words{$desired_initial}->[
+                    @{ $Per_Letter_Words{$desired_initial} } * rand()
                 ];
             } else {
                 $word = $Words[@Words * rand()];
@@ -501,9 +509,9 @@ sub gen_generic_ind_company_names {
 
           ADD_PREFIX:
             {
-                last unless $add_prefixes;
-                last unless !$has_added_prefix && rand()*$num_words*6 < 1;
+                last unless $will_add_prefix;
                 my $prefix = $Prefixes[@Prefixes * rand()];
+                redo WORD if $desired_initial && substr($prefix, 0, 1) ne $desired_initial;
 
                 # avoid prefixing e.g. 'indo-' to 'indonesia'
                 last if $word =~ /^\Q$prefix\E/;
